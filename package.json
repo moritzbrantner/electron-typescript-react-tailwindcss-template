@@ -9,7 +9,8 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "eslint --ext .ts,.tsx ."
+    "lint": "eslint --ext .ts,.tsx .",
+    "lint-fix": "eslint --ext .ts,.tsx . --fix"
   },
   "keywords": [],
   "author": {
@@ -78,7 +79,11 @@
     "css-loader": "^6.6.0",
     "electron": "17.0.1",
     "eslint": "^8.9.0",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "fork-ts-checker-webpack-plugin": "^6.5.0",
     "node-loader": "^2.0.0",
     "postcss": "^8.4.6",
@@ -90,6 +95,7 @@
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
+    "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }
 }

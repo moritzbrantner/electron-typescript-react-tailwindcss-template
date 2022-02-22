@@ -1,10 +1,14 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import App from "./components/App";
+import TestMessage from "./components/TestMessage";
 
 function render() {
-  ReactDOM.render(<App />, document.getElementById("app"));
-}
+  ReactDOM.render(
+    <div className="app">
+      <TestMessage />
+    </div>,
+    document.getElementById("app"));
+};
 
 render();
